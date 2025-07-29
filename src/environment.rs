@@ -10,6 +10,7 @@ pub struct Environment {
 #[derive(Debug, Clone)]
 pub struct Scope {
     variables: HashMap<String, Value>,
+    #[allow(dead_code)]
     parent: Option<usize>, // Index into scopes vector
 }
 
@@ -256,6 +257,12 @@ impl EnvironmentManager {
 
     pub fn push_scope(&mut self) {
         let _scope_id = self.current_env_mut().push_scope();
-        // We can ignore the scope_id for now as it's not used
     }
+}
+
+#[derive(Clone, Debug)]
+pub struct Scope {
+  variables: HashMap<String, Value>,
+  #[allow(dead_code)]
+  parent: Option<usize>,
 }
