@@ -1,0 +1,5 @@
+print("Math examples:")
+print(math.abs(-42))
+print(math.max(10, 20, 5))
+print(math.min(10, 20, 5))
+print(math.sqrt(16))
