@@ -1,6 +1,7 @@
 # Luna - Lua JIT Interpreter
 
-A Lua interpreter with Just-In-Time (JIT) compilation written in Rust. Learning, so AI was used.
+A Lua interpreter with Just-In-Time (JIT) compilation written in Rust.
+- Learning process, AI generated code was included
 
 ## Current Features ✅
 
